@@ -10866,11 +10866,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Birinci Novbe\\Desktop\\Exam-Project\\Exam-Project.csproj",
+      "projectUniqueName": "C:\\Users\\Birinci Novbe\\Desktop\\Final-Exam\\Exam-Project\\Exam-Project.csproj",
       "projectName": "Exam-Project",
-      "projectPath": "C:\\Users\\Birinci Novbe\\Desktop\\Exam-Project\\Exam-Project.csproj",
+      "projectPath": "C:\\Users\\Birinci Novbe\\Desktop\\Final-Exam\\Exam-Project\\Exam-Project.csproj",
       "packagesPath": "C:\\Users\\Birinci Novbe\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Birinci Novbe\\Desktop\\Exam-Project\\obj\\",
+      "outputPath": "C:\\Users\\Birinci Novbe\\Desktop\\Final-Exam\\Exam-Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Birinci Novbe\\AppData\\Roaming\\NuGet\\NuGet.Config"

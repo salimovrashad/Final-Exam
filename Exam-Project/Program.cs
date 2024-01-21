@@ -33,6 +33,6 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 
-PathContants.RootPath = builder.Environment.WebRootPath;
+PathConstants.RootPath = builder.Environment.WebRootPath;
 
 app.Run();

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Gi9a+/fXFQhSFux+Ie0M8MvstEW+Pb9e4WkXDlLjl/6axKgXG2c6KpYWWVCii3GwrTHmLYb9hx9S/dOz1ltWbQ==",
+  "dgSpecHash": "BdKf0maCQf4EGarixEWXr6qjqXQ1KTBr14uPIY7dMas7MB9mhxJ40DConsNX6TOvSmMCh1VblQIcNfOsgOd91w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Birinci Novbe\\Desktop\\Exam-Project\\Exam-Project.csproj",
+  "projectFilePath": "C:\\Users\\Birinci Novbe\\Desktop\\Final-Exam\\Exam-Project\\Exam-Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Birinci Novbe\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\Birinci Novbe\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -1,5 +1,6 @@
 ﻿using Exam_Project.Areas.Admin.ViewModels.ServiceVM;
 using Exam_Project.Context;
+using Exam_Project.Helpers;
 using Exam_Project.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -31,6 +32,7 @@ namespace Exam_Project.Areas.Admin.Controllers
         {
             Service service = new Service
             {
+                Image = await vm.ImageFile.SaveAsync(PathConstants.Product),
                 Name = vm.Name
             };
             _context.Services.Add(service);
@@ -50,6 +52,7 @@ namespace Exam_Project.Areas.Admin.Controllers
         public async Task<IActionResult> Update(int id, ServiceUpdateItemVM vm)
         {
             var item = await _context.Services.FindAsync(id);
+            item.Image = await vm.ImageFile.SaveAsync(PathConstants.Product);
             item.Name = vm.Name;
             await _context.SaveChangesAsync();
             return RedirectToAction("Index");
