@@ -4,6 +4,7 @@ using Exam_Project.Helpers;
 using Exam_Project.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Exam_Project.Areas.Admin.Controllers
 {
@@ -30,6 +31,10 @@ namespace Exam_Project.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(ServiceCreateItemVM vm)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(vm);
+            }
             Service service = new Service
             {
                 Image = await vm.ImageFile.SaveAsync(PathConstants.Product),
@@ -51,6 +56,10 @@ namespace Exam_Project.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Update(int id, ServiceUpdateItemVM vm)
         {
+            if (!ModelState.IsValid)
+            {
+                return View(vm);
+            }
             var item = await _context.Services.FindAsync(id);
             item.Image = await vm.ImageFile.SaveAsync(PathConstants.Product);
             item.Name = vm.Name;

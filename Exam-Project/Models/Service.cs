@@ -8,6 +8,7 @@ namespace Exam_Project.Models
         [Required]
         [MinLength(2), MaxLength(32)]
         public string Name { get; set; }
+        [Required]
         public string Image { get; set; }
     }
 }
